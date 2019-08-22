@@ -1,0 +1,2 @@
+class Ryokutya < ApplicationRecord
+end
