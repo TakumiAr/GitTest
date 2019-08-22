@@ -1,0 +1,17 @@
+<%= form_with(model: ryokutya, local: true) do |form| %>
+  <% if ryokutya.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ryokutya.errors.count, "error") %> prohibited this ryokutya from being saved:</h2>
+
+      <ul>
+        <% ryokutya.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
